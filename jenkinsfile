@@ -6,10 +6,12 @@ pipeline{
         
         stage('Git Checkout'){
             
-            steps{ 
-                    
-              git branch: 'main', url: 'https://github.com/mohammed-mubashshir-alam/major.git'
+            steps{
                 
+                script{
+                    
+                    git branch: 'main', url: 'https://github.com/mohammed-mubashshir-alam/major.git'
+                }
             }
         }
     }
